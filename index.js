@@ -3,7 +3,7 @@ const app = express()
 const route = require('./routes/route')
 const koneksi = require('./utils/db')
 
-app.use(express.json()) //untuk req body sdas
+app.use(express.json()) //untuk req body
 app.use(express.urlencoded({extended: true})) //untuk req body
 
 
@@ -16,4 +16,3 @@ app.use(route)
 app.listen(3000, function(){
     console.log("server is okey")
 })
-//abe
